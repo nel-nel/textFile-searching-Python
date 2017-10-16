@@ -55,6 +55,6 @@ def prove(arrOfObj,dictChr):
     return dictChr
 
 
-lstOfObj=reading(r'C:\Users\user\Downloads\exam\exam\a.gvf')
+lstOfObj=reading(r'a.gvf')
 dictChr=getChr(lstOfObj)
 prove(lstOfObj,dictChr)
