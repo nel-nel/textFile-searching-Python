@@ -6,9 +6,7 @@ def reading(fName):
     for line in f:
         counter+=1
         variant = Anotation(line)
-        #print(variant.Variant_seq)
         arrOfObj.append(variant)
-        break
     return arrOfObj
         
 
@@ -39,14 +37,11 @@ def prove(arrOfObj):
     mistakes=0
     for i in arrOfObj:
         if i.type=="deletion":
-            if i.Variant_seq=="-":
+            if i.Variant_seq!="-":
                 mistakes+=1
     print(mistakes)    
     return mistakes
-            
-
-
-prove(reading(r'D:\My Documents\IT\BMI\Linux\exam\a.gvf'))
+prove(reading(r'a.gvf'))
 
 
 
